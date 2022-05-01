@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio 9</title>
+    </head>
+    <body>
+        <form>
+            <div >
+                <!-- crea un label en donde el usuario ingresa la cantidad de dolares-->
+                <h2>Ingrese USD (dólares)</h2>
+                <input type="text" name ="dolar_peso" id= "dolares" placeholder="Ingrese dolares">
+                <!-- boton que llama a la funcion para convertir los dolares a pesos chilenos-->
+                <button type="button" onclick="USD_a_CLP()">Convertir a CLP</button>
+                <!-- label en donde se imprime el resultado-->
+                <label for="conversionUSD">CLP</label>
+                <input type="text" name ="dolar_a_pesos" id= "conversionUSD">
+            </div>
+            <div>
+                <!-- crea un label en donde el usuario ingresa la cantidad de pesos-->
+                <h2>Ingrese CLP (pesos chilenos)</h2>
+                <input type="text" name="peso_dolar" id= "pesos" placeholder="Ingrese pesos chilenos">
+                <!-- boton que llama a la funcion para convertir los pesos chilenos a dolares-->
+                <button type="button" onclick="CLP_a_USD()">Convertir a USD</button>
+                <!-- label en donde se imprime el resultado-->
+                <label for="conversionCLP">USD</label>
+                <input type="text" name="pesos_a_dolares" id= "conversionCLP" >
+            </div>
+        </form>
+        <!-- carga javascrip-->
+        <script src="JS/ejercicio9.js"></script>
+    </body>
+</html>
